@@ -11,7 +11,9 @@
     "url": "https://github.com/uzarsalan/strong-pubsub-nats"
   },
   "dependencies": {
-    "node-nats-streaming": "0.0.50"
+    "events": "^3.0.0",
+    "node-nats-streaming": "0.0.50",
+    "util": "^0.11.0"
   },
   "keywords": [
     "nats",
