@@ -15,7 +15,7 @@ module.exports = async function(app) {
   var Client = require("strong-pubsub");
   var Adapter = require("loopback-pubsub-nats");
 
-  var client = new Client({ cluster: "test-cluster", client: "test" }, Adapter);
+  var client = new Client({ cluster: "test-cluster", client: "test", server: "nats://localhost:4222" }, Adapter);
 
   client.connect();
 
