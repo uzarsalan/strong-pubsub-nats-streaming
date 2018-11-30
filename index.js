@@ -101,15 +101,15 @@ Adapter.prototype.publish = function(topic, message, options, cb) {
  * @param {Object} subClient A client, subscribed on specific topic`.
  */
 
-Adapter.prototype.subscribe = function(topic, groups, options, cb) {
-  if (typeof options === 'function' && cb === undefined) {
-    cb = options;
-    options = groups;
-    groups = undefined;
+Adapter.prototype.subscribe = function(topic, options, cb) {
+  let group = undefined;
+  if (typeof topic !== 'string') {
+    group = topic.group;
+    topic = topic.topic;
   }
   if (Object.keys(options).length === 0 && options.constructor === Object)
     options = undefined;
-  var subClient = this.natsClient.subscribe(topic, groups || options, groups ? options : null);
+  var subClient = this.natsClient.subscribe(topic, group || options, group ? options : null);
   this.subClients.push(subClient);
   cb(null, subClient);
 };
