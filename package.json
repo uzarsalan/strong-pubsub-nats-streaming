@@ -1,26 +1,61 @@
 {
-  "name": "strong-pubsub-nats-streaming",
-  "version": "1.0.1",
-  "description": "NATS adapter for strong-pubsub",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      "strong-pubsub-nats-streaming@1.0.1",
+      "D:\\Fixcar\\fixcar_answer"
+    ]
+  ],
+  "_from": "strong-pubsub-nats-streaming@1.0.1",
+  "_id": "strong-pubsub-nats-streaming@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-VGPn0jheQYHto0pwUy/dMjnNWZkPGYfc4KqsHBADkTTYUl6Oht6HvoESbbg7t6FWKV4ERhNtCqGEk/1pUKkVBg==",
+  "_location": "/strong-pubsub-nats-streaming",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "strong-pubsub-nats-streaming@1.0.1",
+    "name": "strong-pubsub-nats-streaming",
+    "escapedName": "strong-pubsub-nats-streaming",
+    "rawSpec": "1.0.1",
+    "saveSpec": null,
+    "fetchSpec": "1.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/uzarsalan/strong-pubsub-nats"
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/strong-pubsub-nats-streaming/-/strong-pubsub-nats-streaming-1.0.1.tgz",
+  "_spec": "1.0.1",
+  "_where": "D:\\Fixcar\\fixcar_answer",
+  "author": {
+    "name": "Arsalan Rabdanov",
+    "email": "arsalan.rabdanov@appbaikal.com"
+  },
+  "bugs": {
+    "url": "https://github.com/uzarsalan/strong-pubsub-nats-streaming/issues"
   },
   "dependencies": {
     "events": "^3.0.0",
     "node-nats-streaming": "0.0.50",
     "util": "^0.11.0"
   },
+  "description": "NATS adapter for strong-pubsub",
+  "homepage": "https://github.com/uzarsalan/strong-pubsub-nats-streaming#readme",
   "keywords": [
     "nats",
     "loopback",
     "strong-pubsub",
     "pubsub"
   ],
-  "author": "Arsalan Rabdanov <arsalan.rabdanov@appbaikal.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "name": "strong-pubsub-nats-streaming",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzarsalan/strong-pubsub-nats-streaming.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
 }
