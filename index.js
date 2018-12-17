@@ -1,6 +1,11 @@
 "use-strict";
 
 module.exports = Adapter;
+module.exports.Nats = new (require('./nats'))(
+  process.env.NATS_CLUSTER, 
+  process.env.NATS_CLIENT, 
+  process.env.NATS_SERVER
+);
 
 var nats = require("node-nats-streaming");
 var EventEmitter = require("events").EventEmitter;

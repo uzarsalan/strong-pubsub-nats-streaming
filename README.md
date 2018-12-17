@@ -49,3 +49,15 @@ module.exports = async function(app) {
   });
 };
 ```
+
+## Environment variables
+
+##### Setting up nats environment variables
+
+Nats requires the following env variables to be set
+
+```sh
+NATS_CLUSTER=default
+NATS_CLIENT=default
+NATS_SERVER=nats://localhost:4222
+```
